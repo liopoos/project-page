@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这里是mayuko.cn的实验基地" />
+    <meta name="keywords" content="实验室,hades,烟大,烟台大学" />
+    <meta name="author" content="hades" />
+    <title>实验室</title>
+    <meta name="apple-mobile-web-app-title" content="实验室" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/loader.css">
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/vue-resource.js"></script>
+</head>
+
+<body>
+    <div class="lab-header">
+        <h1 class="text-center">Lab for mayuko.cn.</h1>
+    </div>
+
+    <div class="container lab-body" id="card">
+        <div class="row">
+            <card-item v-for="item in itemArr" :key="item.key" :title="item.title" :desc="item.desc" :icon="item.icon" :time="item.time" :url="item.url" :color="item.color"></card-item>
+        </div>
+        <div class="mod model-3 loader" v-show="loading">
+            <div class="spinner"></div>
+        </div>
+        <p class="card-more">
+            <a class="card-btn" @click="isMore && loadMoreData()" v-show="isMore">{{moreText}}</a>
+        </p>
+    </div>
+
+    <template id="card-item">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" :class="color">
+            <div class="card-hd">
+                <h1 class="card-hd__title"><li class="fa" :class="icon"></li></h1>
+            </div>
+            <div class="card-bd">
+                <h1>{{title}}</h1>
+                <h4>{{desc}}</h4>
+            </div>
+            <div class="card-ft">
+                <div class="col-xs-6 text-left">
+                    <li class="fa fa-clock-o">&nbsp;{{time}}</li>
+                </div>
+                <div class="col-xs-6">
+                    <a v-bind:href="url" target="_blank">查看Demo</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </template>
+
+    <div class="lab-footer">
+        <ul class="list-inline">
+            <li><a href="https://blog.mayuko.cn" target="_blank">Blog</a></li>
+            <li><a href="https://api.mayukoc.n" target="_blank">API</a></li>
+            <li><a href="http://vscom.mayuko.cn" target="_blank">VSCOM</a></li>
+            <li><a href="http://lab.mayuko.cn" target="_blank">Lab</a></li>
+        </ul>
+        <img src="./images/qrcode.png" alt="qrcode" class="lab-qrcode">
+    </div>
+
+    <script type="text/javascript" src="js/init.js"></script>
+
+</body>
+
+</html>

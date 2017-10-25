@@ -1,0 +1,172 @@
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+a {
+    color: #171717;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #171717;
+    text-decoration: underline;
+}
+
+body {
+    font-weight: 800;
+}
+
+/*颜色*/
+
+.color-black {
+    background: #1E2023;
+    color: #fff;
+}
+
+.color-grey {
+    background: #686871;
+    color: #fff;
+}
+
+.color-blue {
+    background: #2B6DFB;
+    color: #fff;
+}
+
+.color-orange {
+    background: #EA7522;
+    color: #fff;
+}
+
+.color-red {
+    background: #E24361;
+    color: #fff;
+}
+
+.color-green {
+    background: #8DC058;
+    color: #fff;
+}
+
+.color-blue2 {
+    background: #319DD4;
+    color: #fff;
+}
+
+.color-purple {
+    background: #2E2A4D;
+    color: #fff;
+}
+
+/*card样式*/
+
+.card {
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px 10px;
+}
+
+.card-hd {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.card-hd__title {
+    padding-top: 10px;
+}
+
+.card-bd {
+    padding: 10px 20px;
+}
+
+.card-bd h4 {
+    padding: 10px 0;
+}
+
+.card-ft {
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    background: #000;
+    filter: alpha(Opacity=30);
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+    text-align: right;
+}
+
+.card-ft a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-ft li {
+    font-weight: 800;
+}
+
+.card-more {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.card-btn {
+    font-size: 20px;
+    background: #333;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 800;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0px auto;
+    padding: 0.4375em 1.5em 0.5em;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 100px;
+}
+
+.card-more a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*lab样式*/
+
+.lab-header {
+    height: 400px;
+    background: url('../images/banner.jpg')repeat;
+    background-size: 100%;
+}
+
+.lab-header h1 {
+    margin: 0;
+    line-height: 400px;
+    font-weight: 800;
+}
+
+.lab-body {
+    padding-top: 20px;
+}
+
+.lab-footer {
+    border-top: 1px solid #eaeaea;
+    color: #000;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.lab-qrcode {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
